@@ -284,7 +284,8 @@ div.newPost {
 }
 
 @media screen and (max-width:768px ) {
-  .marombafoto{
-  width: 100%;
- flex-direction: column;
+    .marombafoto {
+    width: 100%;
+  flex-direction: column;
+  }
 }
