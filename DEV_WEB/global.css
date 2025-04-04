@@ -292,3 +292,12 @@ div.newPost {
   }
 }
 
+.navbar_treinos{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  
+}
+
