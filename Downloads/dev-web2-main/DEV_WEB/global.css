@@ -1,0 +1,316 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+:root {
+  --color-text: #ffffff;
+  --color-error: #980000;
+  --color-paper: #232323;
+  --color-primary: #009688;
+  --color-background: #000000;
+  --color-primary-contrast: #ffffff;
+}
+.bg-blue {
+  background-color: rgb(81, 191, 255);
+}
+
+* {
+  @apply outline-primary outline-1 -outline-offset-2;
+}
+html,
+body {
+  overflow: overlay;
+  @apply bg-background text-text w-screen h-screen;
+  margin: 5px 4px;
+}
+
+.text {
+  color: aliceblue;
+}
+
+.button {
+  @apply p-2 px-2 bg-primary rounded underline-offset-4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.post {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+.post h3 {
+  margin: 0;
+  color: #333;
+}
+.post p {
+  color: #555;
+}
+a {
+  @apply hover:underline active:opacity-50 transition-opacity;
+}
+.overflow-primary::-webkit-scrollbar-thumb {
+  @apply bg-primary;
+}
+
+.h1 {
+  padding-top: 40px;
+  font-size: 80px;
+  margin-left: 70px;
+  margin-top: 95px;
+  margin-bottom: -270px;
+  color: #cd0f3d;
+  font-family: "Poppins", extrabold;
+}
+
+.h2 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 100px;
+  margin-top: 270px;
+  margin-left: 74px;
+}
+
+.h5 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding-top: 9px;
+}
+
+.navbar {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-left: 1100px;
+  margin-top: -40px;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+
+.footer {
+  /*Todos os direitos reservados a empresa */
+  background-color: #ff6c19;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 100px;
+  border-radius: 15px;
+  bottom: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-text);
+}
+
+
+.marombafoto {
+  display: flex;
+  max-width: 100%;
+  width: 640px;
+  height: auto;
+  margin-top: -460px;
+  margin-left: 820px;
+}
+
+.roboto-mono- {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 16px;
+  font-style: normal;
+}
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.btn-home {
+  width: 200px;
+  height: 25px;
+  border-radius: 40px;
+  margin-left: 150px;
+  margin-top: -400px;
+  background-color: #ff6c19;
+  border: none;
+  padding: 6px;
+  padding-top: -15px;
+  color: #ffffff;
+  font-family: "Poppins", extrabold;
+}
+
+.logohome {
+  width: 100px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.sobre {
+  margin-top: 120px;
+  margin-left: 34px;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ft-sobre {
+  width: 500px;
+  margin-left: 900px;
+}
+
+.treinos {
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  display: flex;
+  text-align: end;
+  justify-content: space-around;
+}
+
+.textdescubra {
+  font-family: Poppins, sans-serif;
+  margin-left: 48px;
+  margin-top: 130px;
+}
+
+.descubramais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+div.newPost {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 380px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: #ff812de0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastroForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 380px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: #ff812de0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ .h2-cad{
+  display: flex;
+  bottom: -20px;
+  justify-content: center;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+ }
+
+ .h2-cad, a{
+  margin-left: 10px;
+ }
+
+@media screen and (max-width:768px ) {
+  .descubramais{
+  width: 100%;
+  flex-direction: column;
+}
+}
+@media screen and (max-width:768px ) {
+  .h1,.h2,.h3, .textos, .conteiner-footer {
+    width: 100%;
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width:768px ) {
+    .marombafoto {
+    width: 100%;
+  flex-direction: column;
+  }
+}
+
+.footer {
+  background-color: #ff6c19;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 100px;
+  border-radius: 15px;
+  bottom: 0;
+  text-align: center;
+}
+
+.foot{
+  padding-top: 10px;
+}
