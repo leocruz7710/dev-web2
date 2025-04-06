@@ -1,29 +1,24 @@
-//parte de comunidade, faz os posts do usuario e deleta os posts. commitou???? n esquece hein
-document.addEventListener("DOMContentLoaded", function () {
-  const postForm = document.getElementById("Postar");
-  const postList = document.getElementById("postList");
+const postContent = document.querySelector('content');
+const Postar = document.querySelector('#Postar');
+const inputPost = document.querySelector('#inputPost');
 
-  postForm.addEventListener("submit", function (event) {
-    this.onclick;
-    event.preventDefault();
+function criarPost() {
 
-    const postContent = document.getElementById("postContent").value;
-    if (postContent.trim() === "") return;
+  console.log('Post criado!');
 
-    const postItem = document.createElement("div");
-    postItem.classList.add("post-item");
-    postItem.innerHTML = `
-            <p>${postContent}</p>
-            <button class="delete-btn">Remover</button>
-        `;
-
-    postList.appendChild(postItem);
-    document.getElementById("postContent").value = "";
-
-    postItem
-      .querySelector(".delete-btn")
-      .addEventListener("click", function () {
-        postList.removeChild(postItem);
-      });
-  });
-});
+    const post = document.createElement('div');
+    post.classList.add('post');
+    post.innerHTML = `
+        <div class="post-header">
+            <h3>Nome do Usuário</h3>
+            <span class="data-post">Data do Post</span>
+        </div>
+        <div class="post-content">
+            <p>${inputPost.value}</p>
+        </div>
+        <button class="btn-comentar">Comentar</button>
+        <div class="comentarios"></div>
+    `;
+    postContent.appendChild(post);
+    inputPost.value = '';
+}
