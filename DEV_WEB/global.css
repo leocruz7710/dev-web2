@@ -53,12 +53,12 @@
   /*Todos os direitos reservados a empresa */
   background-color: #0E71B2;
   bottom: 0;
-  position: static;
+  position: relative;
   width: 100%;
   height: 40px;
-  margin-top: 900px;
-  border-radius: 15px;
-  bottom: 0;
+  margin-top: 100%;
+  border-radius: 10px;
+
 }
 .conteiner-footer {
   text-align: center;
@@ -250,17 +250,16 @@ iframe {
 .loginForm {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-left: 400px;;
   width: 100%;
   color: #ffffff;
   height: 100vh;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   box-sizing: border-box;
+ border-color: #0E71B2;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
-  margin: 0 auto;
   max-width: 500px;
   max-height: 500px;
   padding: 20px;
@@ -268,17 +267,76 @@ iframe {
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
-  text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
-  background-color: gradient(to right, #0E71B2, #0056f5);
-  background-image: linear-gradient(to right, #0E71B2, #0051ff);
+  background-color: gradient(to right, #f7f7f7, #e4e4e4);
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 bodyLogin {
   background-color: none;
   background-image: url("/DEV_WEB/assets/academia-dev-web.png");
+}
+.textLogin{
+  color: #000000;
+  font-size: medium;
+}
+
+.loginEmailInput{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.senhaInputLogin{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+.btnLogin{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #0E71B2;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.LogarText{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.coraçaoLogin {
+  display: flex;
+  max-width: 90%;
+  width: 630px;
+  height: auto;
+  margin-top: -650px;
+  margin-bottom: 10px;
+  margin-left: 65%;
 }
 
 /*Pagina de Cadastro*/
@@ -311,8 +369,44 @@ bodyLogin {
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-.textLogin{
+.CadastroEmailInput{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
 
+.senhaInputCadastro{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+.btnCadastro{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #0E71B2;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.CadastroText{
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #000000;
@@ -375,5 +469,13 @@ bodyLogin {
     width: 100%;
     flex-direction: column;
   }
+}
+
+@media screen and (max-width:768px) {
+  .btnLogin, .LogarText, .loginForm, .coraçaoLogin {
+    width: 100%;
+    flex-direction: column;
+  }
+  
 }
 
