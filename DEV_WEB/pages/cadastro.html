@@ -13,15 +13,18 @@
     <script src="/DEV_WEB/scripts/cadastro.js" defer></script>
     <link rel="stylesheet" href="/DEV_WEB/global.css" />
   </head>
-  <body>
+
+  <nav >
+    <ul class="navbar">
+      <li><a rel="stylesheet" class="navbarText" style="text-decoration: none"  href="/DEV_WEB/pages/index.html">Home</a></li>
+      <li><a rel="stylesheet" class="navbarText" style="text-decoration: none"  href="/DEV_WEB/pages/treinos.html">Treinos</a></li>
+    </ul> 
+</nav>
+
+    <body>
 
     <header class="header">
-      <nav >
-          <ul class="navbar">
-            <li><a rel="stylesheet" class="navbarText" style="text-decoration: none"  href="/DEV_WEB/pages/index.html">Home</a></li>
-            <li><a rel="stylesheet" class="navbarText" style="text-decoration: none"  href="/DEV_WEB/pages/treinos.html">Treinos</a></li>
-          </ul> 
-      </nav>
+      
     </header>
 
 
@@ -33,14 +36,14 @@
         
     <forms class="cadastroForm">
       <h3>Cadastre-se</h3>
-      <input type="text" placeholder="Nome" id="nome" />
-      <input type="text" placeholder="Email" id="email" />
-      <input type="password" placeholder="Senha" id="senha" />
-      <input type="submit" value="enviar" id="send" />
-      <p class="h2">
+      <input class= "CadastroNomeInput"type="text" placeholder="Nome" id="nome" />
+      <input class="CadastroEmailInput" type="text" placeholder="Email" id="email" />
+      <input class="senhaInputCadastro" type="password" placeholder="Senha" id="senha" />
+      <input class="btnLogin2" type="submit" value="enviar" id="send" />
+      <p class="h10">
         Já tem uma conta? <a href="/DEV_WEB/pages/login.html">Clique aqui</a>
       </p>
-      <p class="h2">
+      <p class="h10">
         Ao se cadastrar, você concorda com nossos
         <a href="#">Termos de Serviço</a> e
         <a href="#">Política de Privacidade</a>.
