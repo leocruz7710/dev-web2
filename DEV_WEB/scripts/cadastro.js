@@ -13,3 +13,11 @@ btn.addEventListener("click", (e) => {
     alert("Preencha todos os campos!");
   }
 });
+
+let trilho = document.getElementById("trilho");
+let body = document.querySelector("body");
+
+trilho.addEventListener("click", () => {
+  trilho.classList.toggle("dark");
+  body.classList.toggle("dark");
+});
