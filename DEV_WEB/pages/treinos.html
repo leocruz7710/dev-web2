@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/DEV_WEB/global.css" />
-    <script src="/DEV_WEB/scripts/scripts.js"></script>
+    <script defer src="/DEV_WEB/scripts/treinos.js"></script>
   </head>
 
   <body>
@@ -45,8 +45,12 @@
       </ul>
     </nav>
 
-    <img src="/DEV_WEB/assets/LOGOFITSTRENGTH.png" class="logohome" />
-    <header class="header"></header>
+    <img
+      src="/DEV_WEB/assets/LOGOFITSTRENGTH.png"
+      class="logohome"
+      id="logoHome"
+    />
+    <header class="header" id="header"></header>
 
     <div class="trilho" id="trilho">
       <div class="indicador"></div>
@@ -78,14 +82,22 @@
 
     <section>
       <div class="imgTreino">
-        <img src="/DEV_WEB/assets/homemForte.png" alt="" />
-        <img src="/DEV_WEB/assets/mulherMeditando.png" alt="" />
-        <img src="/DEV_WEB/assets/cranioFlores.png" alt="" />
+        <img class="homemForte" src="/DEV_WEB/assets/homemForte.png" alt="" />
+        <img
+          class="mulherMeditando"
+          src="/DEV_WEB/assets/mulherMeditando.png"
+          alt=""
+        />
+        <img
+          class="cranioFlores"
+          src="/DEV_WEB/assets/cranioFlores.png"
+          alt=""
+        />
       </div>
     </section>
   </body>
 
-  <footer class="conteiner-footer">
+  <footer class="conteiner-footer" id="footer">
     <h5 class="h5">Todos os direitos reservados a FITNESS STRENGTH</h5>
   </footer>
 </html>

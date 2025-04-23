@@ -178,11 +178,23 @@ a:hover {
   margin-left: 820px;
 }
 
+.cranioFlores {
+  border-radius: 10px;
+}
+.homemForte {
+  border-radius: 10px;
+}
+.mulherMeditando {
+  border-radius: 10px;
+}
+
 .imgTreino {
   display: flex;
   border-radius: 1rem;
   gap: 2;
   justify-content: space-between;
+  border: #000000;
+  border-radius: 50%;
 }
 
 /*Botões*/
@@ -545,4 +557,18 @@ iframe {
 
 body.dark {
   background-color: #232323;
+}
+
+header.dark {
+  background-color: #003eb1;
+}
+
+.conteiner-footer.dark {
+  background-color: #003eb1;
+}
+
+.logohome.dark {
+  background-color: floralwhite;
+  border-radius: 10px;
+  padding: 5px;
 }
