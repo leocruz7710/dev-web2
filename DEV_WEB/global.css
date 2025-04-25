@@ -232,8 +232,7 @@ a:hover {
   display: flex;
   text-align: center;
   padding: 20px;
-  justify-content: space-around;
-  flex-direction: column;
+  justify-content: space-between;
 }
 iframe {
   width: 100%;
