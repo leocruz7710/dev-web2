@@ -72,36 +72,7 @@ body {
 .button {
   @apply p-2 px-2 bg-primary rounded underline-offset-4;
 }
-/*Pagina Comunidade*/
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.post {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-}
-.post h3 {
-  margin: 0;
-  color: #333;
-}
-.post p {
-  color: #555;
-  div.newPost {
-    width: 100%;
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.1);
-  }
-}
+
 a {
   @apply hover:underline active:opacity-50 transition-opacity;
 }
@@ -224,12 +195,7 @@ a:hover {
   margin-left: 900px;
 }
 
-
 /*Pagina de Treinos*/
-
-
-
-
 
 .conteiner {
   font-family: "Poppins", sans-serif;
@@ -240,28 +206,26 @@ a:hover {
   gap: 20px;
 }
 
-.treinos{
+.treinos {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   justify-items: baseline;
 }
 
-.treinos2{
+.treinos2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   justify-items: flex-end;
 }
 
-.treinos3{
+.treinos3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   justify-items: flex-end;
 }
-
-
 
 iframe {
   width: 100%;
@@ -601,7 +565,42 @@ header.dark {
   padding: 5px;
 }
 
-.loginForm .dark{
+.loginForm .dark {
   background-color: #000000;
 }
 
+/*Página Cuide-se*/
+
+.cuide-seImgs {
+  display: flex;
+  width: 500px;
+  margin-left: 85%;
+  margin-top: 0px;
+}
+.Texts {
+  margin-left: 15px;
+  max-width: 50px;
+  margin-top: 0;
+}
+.textPageCuide-se {
+  display: inline-block;
+  color: #0e71b2;
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+  margin: 20px;
+  flex-direction: column;
+}
+
+.infoText {
+  display: flex;
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  margin: 20px;
+  flex-direction: column;
+  max-width: 50%;
+  margin-top: 0;
+}
