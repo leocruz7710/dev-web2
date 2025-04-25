@@ -604,3 +604,11 @@ header.dark {
   max-width: 50%;
   margin-top: 0;
 }
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  allign-items:center;
+  background-color: forestgreen;
+  padding:1rem 2rem;
+}
